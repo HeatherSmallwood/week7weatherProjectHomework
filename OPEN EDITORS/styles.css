@@ -1,0 +1,24 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+   
+
+}
+
+
+
+.weather-container {
+    background-color: rgba(213, 183, 245, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px white;
+    text-align: center;
+}
+
+
