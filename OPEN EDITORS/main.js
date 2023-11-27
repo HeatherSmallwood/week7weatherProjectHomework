@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${ZIP_CODE}&units=${UNITS}&appid=${API_KEY}`);
             if (!response.ok) {
-                throw new Error('Weather data not available');
+                throw new Error('Weather data could not be found');
             }
             const data = await response.json();
 
@@ -24,9 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
             weatherInfo.humidity.innerText = data.main.humidity;
         } catch (error) {
             console.error('Error:', error.message);
-            alert('Failed to fetch weather data');
+            alert('Could not get the weather data!');
         }
     };
 
     fetchWeatherData();
 });
+
+
