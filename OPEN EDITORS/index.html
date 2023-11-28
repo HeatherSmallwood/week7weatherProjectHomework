@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Heather's Weather Corner </title>
+    <title>Heather's Weather Corner</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="weather-container">
-        <h1>Heather's Weather Corner </h1>
+        <h1>Heather's Weather Corner</h1>
+        <div class="zip-code-input">
+            <label for="zipCode">Enter ZIP Code: </label>
+            <input type="text" id="zipCode" />
+            <button class="btn" id="submitZip">Get Weather</button>
+        </div>
         <div class="weather-info">
             <p><strong>High:</strong> <span id="highTemp"></span>&deg;F</p>
             <p><strong>Low:</strong> <span id="lowTemp"></span>&deg;F</p>

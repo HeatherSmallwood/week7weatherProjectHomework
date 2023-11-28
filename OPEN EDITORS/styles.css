@@ -22,3 +22,19 @@ body {
 }
 
 
+.btn {
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid black; 
+    transition: border-color 0.3s ease; 
+
+ 
+    background-color: rgb(206, 202, 202);
+    color: black;
+}
+
+
+.btn:hover {
+    background-color: rgb(158, 81, 225); 
+    
+}
